@@ -25,8 +25,8 @@ a { color: inherit; text-decoration: none; }
 .header-cta { font-weight: bold; }
 
 .hero { position: relative; }
-.hero-image { display: block; width: 100%; height: 38vw; min-height: 260px; max-height: 540px; object-fit: cover; }
-.hero-caption { position: absolute; left: 6%; bottom: 24px; }
+.hero-image { display: block; width: 100%; height: auto; }
+.hero-caption { padding: 22px 6% 0; }
 .hero-caption p { margin: 8px 0 0; font-size: 1.8rem; font-weight: bold; }
 .eyebrow { font-size: .75rem; letter-spacing: 2px; text-transform: uppercase; }
 
@@ -81,6 +81,18 @@ h1, h2, h3 { margin-top: 12px; }
 @media (max-width: 420px) {
     .site-header { padding: 18px 5%; }
     .main-nav { gap: 12px; font-size: .8rem; }
-    .hero-image { height: 280px; }
     .collection { padding-right: 5%; padding-left: 5%; }
 }
+
+/* Produtos reais: foto, preço e condições */
+.product-visual:has(img) { background: #FFFAFA; }
+.product-card { display: flex; flex-direction: column; }
+.product-note { margin-top: auto; }
+.product-price { padding-top: 14px; }
+.price-row { display: flex; align-items: center; gap: 10px; }
+.price-old { color: var(--cinza); font-size: .85rem; }
+.price-off { padding: 3px 8px; background: #000; border: 1px solid var(--dourado); color: var(--dourado); font-size: .75rem; font-weight: bold; }
+.price-now { display: block; margin-top: 4px; font-size: 1.5rem; }
+.price-pix { display: block; margin: 6px 0 12px; color: var(--cinza); font-size: .85rem; }
+.price-pix b { color: var(--branco); }
+@media (max-width: 1000px) and (min-width: 701px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
