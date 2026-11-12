@@ -39,14 +39,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--dourado); outli
 .main-nav a { padding: 6px 0; border-bottom: 1px solid transparent; white-space: nowrap; }
 .main-nav a:hover,
 .main-nav a:focus-visible,
-.main-nav a[aria-current],
-body:not(:has(main :target)) .home-nav a[href="#inicio"],
-body:has(#inicio:target) .home-nav a[href="#inicio"],
-body:has(#colecao:target) .home-nav a[href="#colecao"],
-body:has(#classico:target) .home-nav a[href="#classico"],
-body:has(#esportivo:target) .home-nav a[href="#esportivo"],
-body:has(#versatil:target) .home-nav a[href="#versatil"],
-body:has(#sobre:target) .home-nav a[href="#sobre"] {
+.main-nav a[aria-current] {
     color: var(--branco);
     border-bottom-color: var(--dourado);
 }
