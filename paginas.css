@@ -3,10 +3,11 @@
 .information-title { margin: 0; text-align: center; font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.1; text-transform: uppercase; }
 .information-title::after { content: ""; display: block; width: 64px; height: 3px; margin: 24px auto 0; background: var(--dourado); }
 .contact-form, .trust-content { width: 100%; max-width: 480px; margin: 48px auto 0; }
-.contact-notice { margin: 12px 0 0; color: var(--cinza); font-size: .85rem; line-height: 1.6; }
+.contact-notice { margin: 0 0 24px; padding-left: 12px; border-left: 2px solid var(--dourado); color: var(--cinza); font-size: .9rem; line-height: 1.6; }
+.contact-form fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.trust-content { color: var(--cinza); line-height: 1.7; }
 .form-field { margin-bottom: 22px; }
 .form-field label { display: block; margin-bottom: 9px; font-size: .85rem; font-weight: bold; }
-.form-field label span { color: var(--cinza); font-weight: normal; }
 .form-field input, .form-field textarea { display: block; width: 100%; padding: 14px; border: 1px solid #444; border-radius: 0; background: var(--grafite); color: var(--branco); font: inherit; }
 .form-field textarea { resize: vertical; }
 .form-field input:focus-visible, .form-field textarea:focus-visible { outline: 2px solid var(--dourado); outline-offset: 2px; }

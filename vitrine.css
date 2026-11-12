@@ -4,9 +4,9 @@
     padding-top: clamp(48px, 7vw, 90px);
 }
 
-.catalog-page .information-title { margin-bottom: 40px; }
-.catalog-page .product-name { margin-bottom: 0; font-size: 1.17rem; }
-.catalog-message { display: none; max-width: 1200px; margin: 0 auto; color: var(--cinza); }
+.catalog-page .information-title { margin-bottom: 32px; }
+
+.catalog-page .product-name { overflow-wrap: anywhere; }
 
 .catalog-nav a[id] { scroll-margin-top: 12rem; }
 .catalog-nav a:target,
@@ -15,21 +15,18 @@
     border-bottom-color: var(--dourado);
 }
 
-.catalog-title[data-tipo],
-body:has(.catalog-nav a:target) .catalog-title:not([data-tipo]),
+/* A âncora seleciona a categoria. Sem âncora, todos os relógios são exibidos. */
+.catalog-page > [data-tipo],
+body:has(.catalog-nav a:target) .catalog-page > :is(.catalog-title, .catalog-count):not([data-tipo]),
 body:has(#classico:target) .product-card:not([data-tipo="classico"]),
 body:has(#esportivo:target) .product-card:not([data-tipo="esportivo"]),
 body:has(#versatil:target) .product-card:not([data-tipo="versatil"]) {
     display: none;
 }
 
-body:has(#classico:target) .catalog-title[data-tipo="classico"],
-body:has(#esportivo:target) .catalog-title[data-tipo="esportivo"],
-body:has(#versatil:target) .catalog-title[data-tipo="versatil"],
-body:not(:has(.product-card)) .catalog-message,
-body:has(#classico:target):not(:has(.product-card[data-tipo="classico"])) .catalog-message,
-body:has(#esportivo:target):not(:has(.product-card[data-tipo="esportivo"])) .catalog-message,
-body:has(#versatil:target):not(:has(.product-card[data-tipo="versatil"])) .catalog-message {
+body:has(#classico:target) .catalog-page > [data-tipo="classico"],
+body:has(#esportivo:target) .catalog-page > [data-tipo="esportivo"],
+body:has(#versatil:target) .catalog-page > [data-tipo="versatil"] {
     display: block;
 }
 
