@@ -1,0 +1,40 @@
+.catalog-page {
+    flex: 1;
+    width: 100%;
+    padding-top: clamp(48px, 7vw, 90px);
+}
+
+.catalog-page .information-title { margin-bottom: 32px; }
+
+.catalog-page .product-name { overflow-wrap: anywhere; }
+
+.catalog-nav a[id] { scroll-margin-top: 12rem; }
+.catalog-nav a:target,
+.catalog-nav:not(:has(a:target)) a[href="colecao.html"] {
+    color: var(--branco);
+    border-bottom-color: var(--dourado);
+}
+
+/* A âncora seleciona a categoria. Sem âncora, todos os relógios são exibidos. */
+.catalog-page > [data-tipo],
+body:has(.catalog-nav a:target) .catalog-page > :is(.catalog-title, .catalog-count):not([data-tipo]),
+body:has(#classico:target) .product-card:not([data-tipo="classico"]),
+body:has(#esportivo:target) .product-card:not([data-tipo="esportivo"]),
+body:has(#versatil:target) .product-card:not([data-tipo="versatil"]) {
+    display: none;
+}
+
+body:has(#classico:target) .catalog-page > [data-tipo="classico"],
+body:has(#esportivo:target) .catalog-page > [data-tipo="esportivo"],
+body:has(#versatil:target) .catalog-page > [data-tipo="versatil"] {
+    display: block;
+}
+
+.about-content {
+    max-width: 620px;
+    margin: 40px auto 0;
+    color: var(--cinza);
+    line-height: 1.7;
+}
+
+.about-content p { margin: 0 0 1em; }

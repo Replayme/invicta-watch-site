@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="Veja o formulário demonstrativo de contato da vitrine escolar.">
+    <title>Entrar em contato | Vitrine Escolar</title>
+    <link rel="stylesheet" href="catalogo-style.css">
+    <link rel="stylesheet" href="catalogo-paginas.css">
+</head>
+<body class="information-page">
+    <header class="site-header">
+        <a class="brand" href="index.html#inicio" aria-label="Vitrine Escolar — início">VITRINE<span>.</span></a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="index.html#inicio">Início</a>
+            <a href="colecao.html">Coleção</a>
+            <a href="classico.html">Clássico</a>
+            <a href="esportivo.html">Esportivo</a>
+            <a href="versatil.html">Versátil</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="catalogo-site-confiavel.html">Como funciona</a>
+            <a href="catalogo-contato.html" aria-current="page">Entrar em contato</a>
+        </nav>
+        <a class="header-cta" href="colecao.html">Explorar relógios <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="information-main">
+        <h1 class="information-title">Entrar em contato</h1>
+        <form class="contact-form" method="post" aria-describedby="contact-notice">
+            <p class="contact-notice" id="contact-notice">Este formulário é demonstrativo. O envio está indisponível e nenhum dado é transmitido.</p>
+            <fieldset disabled aria-label="Campos de contato demonstrativos">
+                <div class="form-field">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" autocomplete="name">
+                </div>
+                <div class="form-field">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" autocomplete="email">
+                </div>
+                <div class="form-field">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" name="telefone" type="tel" autocomplete="tel">
+                </div>
+                <div class="form-field">
+                    <label for="comentario">Comentário</label>
+                    <textarea id="comentario" name="comentario" rows="6"></textarea>
+                </div>
+                <button class="button button-gold" type="submit" disabled>Enviar mensagem <span aria-hidden="true">↗</span></button>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="site-footer">
+        <a class="brand" href="index.html#inicio">VITRINE<span>.</span></a>
+        <p class="footer-notice">Projeto demonstrativo para fins educacionais. A empresa apresentada é fictícia e não possui vínculo com a Invicta nem a representa oficialmente.</p>
+    </footer>
+</body>
+</html>
