@@ -15,7 +15,6 @@
     border-bottom-color: var(--dourado);
 }
 
-/* A âncora seleciona a categoria. Sem âncora, todos os relógios são exibidos. */
 .catalog-title[data-tipo],
 body:has(.catalog-nav a:target) .catalog-title:not([data-tipo]),
 body:has(#classico:target) .product-card:not([data-tipo="classico"]),
