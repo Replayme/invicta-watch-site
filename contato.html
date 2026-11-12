@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="Entre em contato com a Invicta.">
+    <title>Entrar em contato | Invicta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="paginas.css">
+</head>
+<body class="information-page">
+    <header class="site-header">
+        <a class="brand" href="index.html#inicio" aria-label="Invicta — início">INVICTA<span>.</span></a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="index.html#inicio">Início</a>
+            <a href="index.html#colecao">Coleção</a>
+            <a href="index.html#classico">Clássico</a>
+            <a href="index.html#esportivo">Esportivo</a>
+            <a href="index.html#versatil">Versátil</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="site-confiavel.html">Nosso site é confiável?</a>
+            <a href="contato.html" aria-current="page">Entrar em contato</a>
+        </nav>
+        <a class="header-cta" href="index.html#colecao">Explorar relógios <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="information-main">
+        <h1 class="information-title">Entrar em contato</h1>
+        <form class="contact-form" method="post" aria-describedby="contact-notice">
+            <div class="form-field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="name">
+            </div>
+            <div class="form-field">
+                <label for="email">E-mail <span>(obrigatório)</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" autocomplete="tel">
+            </div>
+            <div class="form-field">
+                <label for="comentario">Comentário</label>
+                <textarea id="comentario" name="comentario" rows="6"></textarea>
+            </div>
+            <button class="button button-gold" type="submit" disabled>Enviar mensagem <span aria-hidden="true">↗</span></button>
+            <p class="contact-notice" id="contact-notice">O envio de mensagens ainda não está disponível.</p>
+        </form>
+    </main>
+    <footer class="site-footer">
+        <a class="brand" href="index.html#inicio">INVICTA<span>.</span></a>
+        <p>Estilo para todos os momentos.</p>
+        <span class="copyright">© 2026 — Todos os direitos reservados.</span>
+    </footer>
+</body>
+</html>
