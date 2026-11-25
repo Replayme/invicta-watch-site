@@ -25,7 +25,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--dourado); outli
     min-height: 72px;
 }
 .site-header .brand { justify-self: start; }
-.brand { font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
+.brand { font-family: Georgia, "Times New Roman", serif; font-size: 1.65rem; font-style: italic; font-weight: bold; letter-spacing: 1px; }
 .brand span, .header-cta, .eyebrow, .availability a { color: var(--dourado); }
 .main-nav {
     display: flex;
